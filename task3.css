@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #f0e9e9;
+    margin: 0;
+    padding: 20px;
+}
+
+.image {
+    height: 400px;
+    width: 440px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: burlywood;
+}
+
+.header {
+    color: #0eafe5;
+    text-align: center;
+}
+
+.description,
+.about-text,
+.interactive-text {
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+.about-header {
+    color: #0056b3;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .image {
+        height: 300px; /* Adjusting image height */
+        width: 100%;   /* Making the image responsive */
+    }
+
+    .header, .about-header {
+        font-size: 1.5em; /* Larger font size for headings */
+    }
+
+    .description, .about-text, .interactive-text {
+        font-size: 1em; /* Adjusting font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .header, .about-header {
+        font-size: 1.2em; /* Further adjust font size */
+    }
+
+    .description, .about-text, .interactive-text {
+        font-size: 0.9em; /* Smaller font size for small screens */
+    }
+}

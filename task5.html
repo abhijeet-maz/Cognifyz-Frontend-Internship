@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Web Page</title>
+    <link href="task3.css" rel="stylesheet">
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f4f4f9; color: #f0e9e9; margin: 0; padding: 20px;">
+
+    <div>
+        <img src="laptop.jpg" alt="developer photo" style="height: 400px; width: 440px; display: block; margin: 10px auto; border-radius: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); background-color: burlywood;">
+    </div>
+
+    <div>
+        <h1 style="color: #0eafe5; text-align: center;">Welcome to My Website</h1>
+        <p style="line-height: 1.6; font-size: 1.1em;">This is my very first webpage created with HTML and CSS.</p>
+    </div>
+
+    <div>
+        <h2 style="color: #0056b3;">About Me</h2>
+        <p style="line-height: 1.6; font-size: 1.1em;">I started learning front-end development recently to build interactive websites. I believe that learning web development will open up new opportunities for me in the tech industry.</p>
+        <p style="line-height: 1.6; font-size: 1.1em; color:#15da33">This is an interactive webpage</p>
+    </div>
+
+    <!-- Task 4: Interactive Button -->
+    <div style="text-align: center; margin-top: 20px;">
+        <button onclick="changeBackgroundColor()" style="padding: 10px 20px; font-size: 1.1em; color: white; background-color: #0eafe5; border: none; border-radius: 5px; cursor: pointer;">
+            Change Background Color
+        </button>
+    </div>
+
+    <!-- Task 5: API Integration -->
+    <div style="text-align: center; margin-top: 30px;">
+        <button onclick="fetchPosts()" style="padding: 10px 20px; font-size: 1.1em; color: white; background-color: #a58917; border: none; border-radius: 5px; cursor: pointer;">
+            Fetch News
+        </button>
+    </div>
+
+    <div>
+        <h2 style="color: #0056b3;">Latest Posts</h2>
+        <div id="posts" style="padding: 10px; background-color: #fff; color: black; border-radius: 10px;"></div>
+    </div>
+
+    <!-- Link External Script -->
+    <script src="script.js"></script>
+</body>
+</html>
